@@ -1,0 +1,23 @@
+.parent{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    flex-shrink: 50;
+    /* align-self: center; */
+    width: 360px;
+    margin: 0 auto;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px grey;
+}
+.weather{
+    background-image: url('img/weather2.jpg');
+}
+img{
+    opacity: 0.5;
+    filter: alpha(opacity=90); 
+}

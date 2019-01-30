@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animated.css">
+    <title>Document</title>
+</head>
+<body>
+
+ <div class="card text-center">
+   <div class="card-header">
+     <ul class="nav nav-pills card-header-pills">
+       <li class="nav-item">
+         <a class="nav-link active" href="#">Weather In's</a>
+       </li>
+     
+     </ul>
+   </div>
+   <div class="card-body">
+     <h4 class="card-title">Weather's Info</h4>
+     <p class="card-text slideInLeft animated">hope! you would like to know about weather condtions!</p>
+   </div>
+ </div>
+    <div class="parent">
+        <div class="child">
+    <div class="form-group col-md-10 " id="txterror">
+      <label for=""></label>
+      <input type="text" id="txtField" 
+      class="form-control" name="" placeholder="Enter-City" id="inputsucess1" aria-describedby="helpId" placeholder="">
+      <small id="helpId" class="form-text text-muted ">Only Shows Pakistan Wethers!</small>
+    </div>
+    <div class="form-group col-md-10 ">
+        <button type="button" class="btn btn-danger" id="btnweather" >Check Weather</button>
+    </div>
+</div>
+</div>
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                <h4 class="modal-title" id="modelTitleId">Sorry for now!!!!</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    You can check for availaible weathes are:
+                    <div class="dropdown open">
+                        <button class="btn btn-primary|secondary|success|danger|warning|info|light|dark|link dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                    Availaible weathers are:
+                                </button>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="#">Karachi</a>
+                            <a class="dropdown-item" href="#">Islamabad</a>
+                            <a class="dropdown-item" href="#">Lahore</a>
+                            <a class="dropdown-item" href="#">Multan</a>
+                            <a class="dropdown-item" href="#">Quetta</a>
+                            <a class="dropdown-item" href="#">Hydrabad</a>
+                            <a class="dropdown-item" href="#">Kyber Pakhtonkhaw</a>
+                            <a class="dropdown-item" href="#">Peshawar</a>
+                        
+                        
+
+                            
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="model" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-sm-10" >
+                    <img src="img/weather2.jpg" alt="" width="450px">
+                </div>
+                
+                </div>
+            <div class="modal-body">
+                    <div class="col-sm-10" > 
+                            <h4 class="modal-title" id="modelTitleId">Weather info</h4>
+                           </div>
+                <div class="container-fluid" id="addrows">
+                   <table class="table">
+                       <thead>
+                           <tr>
+                               <th>Cityname:</th>
+                               <th id="name"></th>
+                               <th></th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr id="addrecord">
+                              
+                           </tr>
+                           <tr>
+                             
+                            
+                           </tr>
+                           <tr>
+                            
+                           </tr>
+                           <tr> 
+                            
+                           </tr>
+                           <tr>
+                            
+                           </tr>
+                       </tbody>
+                   </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="js/api.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
